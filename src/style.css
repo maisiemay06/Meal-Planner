@@ -1,0 +1,44 @@
+body {
+    background-image: url(./wood-bckgrnd.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 1.5em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 4fr;
+    grid-gap: 1em;
+}
+
+header {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    text-align: center;
+    padding: 0.5em;
+    box-shadow: 3px 3px 10px -2px black;
+}
+
+.planner {
+    grid-column: 1 / span 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1em;
+}
+
+.planner .card {
+   min-height: 10em;
+   box-shadow: 3px 3px 10px -2px black;
+}
+
+.shopping {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    height: 100%;
+    background-image: url(./notepad_dotted_paper.png);
+    background-size: 100% 100%;
+    box-shadow: 3px 3px 10px -2px black;
+    padding: 70px 20px 0px 20px;
+}
