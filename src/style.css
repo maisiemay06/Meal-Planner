@@ -70,4 +70,37 @@ header {
     background-size: 100% 100%;
     box-shadow: 3px 3px 10px -2px black;
     padding: 70px 20px 0px 20px;
+    position: relative;
+}
+
+.shopping .newListInput {
+    border: none;
+    width: 70%;
+    display: inline;
+}
+.shopping .submitInput {
+    width: 20%;
+    display: inline;
+}
+
+.shopping ul {
+    list-style: none;
+    margin-left: -30px;
+    
+}
+.shopping li {
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.shopping li:hover {
+    font-weight: bold;
+}
+.shopping li.checked {
+    color: grey;
+    text-decoration: line-through;
+}
+.close {
+    position: absolute;
+    right: 20px;
 }

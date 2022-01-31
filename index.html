@@ -16,57 +16,57 @@
         <div class="card day">
             <h2>M</h2>
             <form>
-                <input type="text" placeholder="Enter a meal for breakfast">
-                <input type="text" placeholder="Enter a meal for lunch">
-                <input type="text" placeholder="Enter a meal for dinner">
+                <input type="text" placeholder="Enter your breakfast">
+                <input type="text" placeholder="Enter your lunch">
+                <input type="text" placeholder="Enter your dinner">
             </form>
         </div>
         <div class="card day">
             <h2>T</h2>
             <form>
-                <input type="text" placeholder="Enter a meal for breakfast">
-                <input type="text" placeholder="Enter a meal for lunch">
-                <input type="text" placeholder="Enter a meal for dinner">
+                <input type="text" placeholder="Enter your breakfast">
+                <input type="text" placeholder="Enter your lunch">
+                <input type="text" placeholder="Enter your dinner">
             </form>
         </div>
         <div class="card day">
             <h2>W</h2>
             <form>
-                <input type="text" placeholder="Enter a meal for breakfast">
-                <input type="text" placeholder="Enter a meal for lunch">
-                <input type="text" placeholder="Enter a meal for dinner">
+                <input type="text" placeholder="Enter your breakfast">
+                <input type="text" placeholder="Enter your lunch">
+                <input type="text" placeholder="Enter your dinner">
             </form>
         </div>
         <div class="card day">
             <h2>T</h2>
             <form>
-                <input type="text" placeholder="Enter a meal for breakfast">
-                <input type="text" placeholder="Enter a meal for lunch">
-                <input type="text" placeholder="Enter a meal for dinner">
+                <input type="text" placeholder="Enter your breakfast">
+                <input type="text" placeholder="Enter your lunch">
+                <input type="text" placeholder="Enter your dinner">
             </form>
         </div>
         <div class="card day">
             <h2>F</h2>
             <form>
-                <input type="text" placeholder="Enter a meal for breakfast">
-                <input type="text" placeholder="Enter a meal for lunch">
-                <input type="text" placeholder="Enter a meal for dinner">
+                <input type="text" placeholder="Enter your breakfast">
+                <input type="text" placeholder="Enter your lunch">
+                <input type="text" placeholder="Enter your dinner">
             </form>
         </div>
         <div class="card day">
             <h2>S</h2>
             <form>
-                <input type="text" placeholder="Enter a meal for breakfast">
-                <input type="text" placeholder="Enter a meal for lunch">
-                <input type="text" placeholder="Enter a meal for dinner">
+                <input type="text" placeholder="Enter your breakfast">
+                <input type="text" placeholder="Enter your lunch">
+                <input type="text" placeholder="Enter your dinner">
             </form>
         </div>
         <div class="card day">
             <h2>S</h2>
             <form>
-                <input type="text" placeholder="Enter a meal for breakfast">
-                <input type="text" placeholder="Enter a meal for lunch">
-                <input type="text" placeholder="Enter a meal for dinner">
+                <input type="text" placeholder="Enter your breakfast">
+                <input type="text" placeholder="Enter your lunch">
+                <input type="text" placeholder="Enter your dinner">
             </form>
         </div>
         <div class="card extra">
@@ -77,37 +77,18 @@
     </div>
     <div class="shopping">
         <h2>Shopping</h2>
-        <div class="form-check">
-            <input type="checkbox" value="" id="checkbox-1" class="form-check-input">
-            <label for="checkbox-1" class="form-check-label">
-                Tomatoes
-            </label>
-        </div>
-        <div class="form-check">
-            <input type="checkbox" value="" id="checkbox-2" class="form-check-input">
-            <label for="checkbox-2" class="form-check-label">
-                Onions
-            </label>
-        </div>
-        <div class="form-check">
-            <input type="checkbox" value="" id="checkbox-3" class="form-check-input">
-            <label for="checkbox-3" class="form-check-label">
-                Bread
-            </label>
-        </div>
-        <div class="form-check">
-            <input type="checkbox" value="" id="checkbox-4" class="form-check-input">
-            <label for="checkbox-4" class="form-check-label">
-                Milk
-            </label>
-        </div>
-        <div class="form-check">
-            <input type="checkbox" value="" id="checkbox-5" class="form-check-input">
-            <label for="checkbox-5" class="form-check-label">
-                Eggs
-            </label>
-        </div>
+        <form onsubmit="return false;">
+            <input type="text" id="newListInput" class="newListInput" placeholder="Add an item...">
+            <input type="submit" class="submitList" value="Add" onclick="addListItem()">
+        </form>
+        <ul id="shoppingList">
+            <li>Tomatoes</li>
+            <li class="checked">Onions</li>
+            <li>Bread</li>
+            <li>Milk</li>
+            <li>Eggs</li>
+        </ul>
     </div>
 </body>
-<script src="index.js"></script>
+<script src="./src/index.js"></script>
 </html>
