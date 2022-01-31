@@ -1,13 +1,15 @@
 let shoppingList = document.getElementById("shoppingList");
 
-let listItems = document.getElementsByTagName("LI");
-let i = 0;
-for (i=0; i<listItems.length;i++) {
-    let span = document.createElement("SPAN");
-    let cross = document.createTextNode("x");
-    span.className = "close";
-    span.appendChild(cross);
-    listItems[i].appendChild(span);
+function addClose() {
+    let listItems = document.getElementsByTagName("LI");
+    let i = 0;
+    for (i=0; i<listItems.length;i++) {
+        let span = document.createElement("SPAN");
+        let cross = document.createTextNode("x");
+        span.className = "close";
+        span.appendChild(cross);
+        listItems[i].appendChild(span);
+    }
 }
 
 let close = document.getElementsByClassName("close");
@@ -29,5 +31,6 @@ function addListItem() {
     let li = document.createElement("li");
     li.appendChild(document.createTextNode(input));
     shoppingList.appendChild(li);
+    addClose();
 }
 
