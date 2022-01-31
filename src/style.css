@@ -2,6 +2,7 @@ body {
     background-image: url(./wood-bckgrnd.jpg);
     background-size: cover;
     margin: 0 auto;
+    font-family: 'Itim', cursive;
 }
 
 .container {
@@ -12,12 +13,18 @@ body {
     grid-gap: 1em;
 }
 
-header {
+header.card {
+    background-color: #6b705c;
+    color: #ffe8d6;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     text-align: center;
-    padding: 0.5em;
+    padding-top: 1.2em;
     box-shadow: 3px 3px 10px -2px black;
+}
+
+h2 {
+    color: #6b705c;
 }
 
 .planner {
@@ -33,6 +40,7 @@ header {
     min-height: 10em;
     box-shadow: 3px 3px 10px -2px black;
     padding: 10px;
+    background-color: #F9F5DE;
  }
 
 .planner .day {
@@ -45,12 +53,12 @@ header {
     grid-column: 1 / span 1;
     grid-row: 1 / span 3;
     text-align: center;
-    
 }
 
 .planner input {
     width: 100%;
     border: none;
+    background-color: transparent;
 }
 
 .planner .day input {
@@ -58,8 +66,12 @@ header {
     margin-top: 10px;
 }
 
-.planner .extra input {
-    height: 8.5em;
+.planner .extra textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: #6b705c;
 }
 
 .shopping {
@@ -78,17 +90,35 @@ header {
     width: 70%;
     display: inline;
 }
-.shopping .submitInput {
-    width: 20%;
+.shopping .submitList {
+    width: 25%;
     display: inline;
+    background-color: #a5a58d;
+    color: #6b705c;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px black;
+    transition: 0.2s ;
+    font-weight: bold;
+    
+}
+.shopping .submitList:hover {
+    background-color: #6b705c;
+    color: #ffe8d6;
+    box-shadow: none;
+}
+.shopping .submitList:active {
+    background-color: #a5a58d;
+    color: #6b705c;
 }
 
 .shopping ul {
     list-style: none;
-    margin-left: -30px;
-    
+    margin-left: -30px;  
 }
 .shopping li {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.2em;
     box-sizing: border-box;
     cursor: pointer;
     transition: 0.2s;
