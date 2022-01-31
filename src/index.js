@@ -27,10 +27,8 @@ shoppingList.addEventListener('click', function(event) {
 
 function addListItem() {
     let input = document.getElementById("newListInput").value;
-    console.log(input);
     let li = document.createElement("li");
     li.appendChild(document.createTextNode(input));
     shoppingList.appendChild(li);
     addClose();
 }
-
