@@ -10,16 +10,17 @@ function addClose() {
         span.appendChild(cross);
         listItems[i].appendChild(span);
     }
-}
-
-let close = document.getElementsByClassName("close");
-let j = 0;
-for (j=0; j<close.length; j++) {
-    close[j].onclick = function() {
-        let div = this.parentElement;
-        div.style.display = "none";
+    let close = document.getElementsByClassName("close");
+    let j = 0;
+    for (j=0; j<close.length; j++) {
+        close[j].onclick = function() {
+            let div = this.parentElement;
+            div.style.display = "none";
+        }
     }
 }
+
+
 
 shoppingList.addEventListener('click', function(event) {
     event.target.classList.toggle("checked");

@@ -81,7 +81,7 @@
     <div class="shopping">
         <h2>Shopping</h2>
         <form onsubmit="return false;">
-            <input type="text" id="newListInput" class="newListInput" placeholder="Add an item...">
+            <input type="text" id="newListInput" class="newListInput" placeholder="Add an item..." onfocus=this.value="">
             <input type="submit" class="submitList" value="Add" onclick="addListItem()">
         </form>
         <ul id="shoppingList">
